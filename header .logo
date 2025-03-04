@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unblocking Website</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.hero {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <svg class="logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z" fill="#0A0E17"/>
+                    <path d="M28.5 18C28.5 23.799 23.799 28.5 18 28.5C12.201 28.5 7.5 23.799 7.5 18C7.5 12.201 12.201 7.5 18 7.5C23.799 7.5 28.5 12.201 28.5 18Z" stroke="#3B82F6" stroke-width="1.5"/>
+                    <path d="M24 18C24 21.3137 21.3137 24 18 24C14.6863 24 12 21.3137 12 18C12 14.6863 14.6863 12 18 12C21.3137 12 24 14.6863 24 18Z" fill="#EA4335"/>
+                    <path d="M21.3333 18C21.3333 19.8409 19.8409 21.3333 18 21.3333C16.1591 21.3333 14.6667 19.8409 14.6667 18C14.6667 16.1591 16.1591 14.6667 18 14.6667C19.8409 14.6667 21.3333 16.1591 21.3333 18Z" stroke="#3B82F6" stroke-width="1.5"/>
+                </svg>
+    <h1>The Best Unblðcking Website To Have Fun During School</h1>
+  </div>
+</body>
+</html>
