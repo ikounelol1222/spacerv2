@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Hub V1</title>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <svg class="logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z" fill="#0A0E17"/>
+                    <path d="M28.5 18C28.5 23.799 23.799 28.5 18 28.5C12.201 28.5 7.5 23.799 7.5 18C7.5 12.201 12.201 7.5 18 7.5C23.799 7.5 28.5 12.201 28.5 18Z" stroke="#3B82F6" stroke-width="1.5"/>
+                    <path d="M24 18C24 21.3137 21.3137 24 18 24C14.6863 24 12 21.3137 12 18C12 14.6863 14.6863 12 18 12C21.3137 12 24 14.6863 24 18Z" fill="#EA4335"/>
+                    <path d="M21.3333 18C21.3333 19.8409 19.8409 21.3333 18 21.3333C16.1591 21.3333 14.6667 19.8409 14.6667 18C14.6667 16.1591 16.1591 14.6667 18 14.6667C19.8409 14.6667 21.3333 16.1591 21.3333 18Z" stroke="#3B82F6" stroke-width="1.5"/>
+                </svg>
+                <h1>Cosmic Hub</h1>
+            </div>
+            <div id="tab-cloaker">
+                <select id="cloak-option">
+                    <option value="Google Classroom">Google Classroom</option>
+                    <option value="EZ Puzzle">EZ Puzzle</option>
+                    <option value="Google Docs">Google Docs</option>
+                    <option value="Canvas">Canvas</option>
+                </select>
+                <button onclick="changeTab()">Apply Tab</button>
+                <button id="panic-button" onclick="panicMode()">PANIC!</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="glowing-text">The Best Unblðcking Website To Have Fun During School.</h1>
+            <p class="hero-subtitle">Join the fun with Student Hub at school!</p>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search games, websites, or content...">
+                <button onclick="searchContent()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul>
+                <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
+                <li><a href="#browser"><i class="fas fa-globe"></i> Proxy</a></li>
+                <li><a href="#movies"><i class="fas fa-film"></i> Apps</a></li>
+                <li><a href="#tools"><i class="fas fa-tools"></i> Settings</a></li>
+                <li><a href="#chat"><i class="fas fa-comment"></i> Chatbox</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Games Section -->
+    <section id="games">
+        <h2>Play Games!</h2>
+        <div class="game-search">
+            <input type="text" id="game-search-bar" placeholder="Search games...">
+            <button onclick="searchGames()">Find</button>
+        </div>
+        <div class="game-list">
+            <div class="game">
+                <h3>Slope</h3>
+                <iframe src="https://previews.envatousercontent.com/files/223637350/index.html" width="500" height="300"></iframe>
+            </div>
+            <div class="game">
+                <h3>flappy bird</h3>
+                <iframe src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/TAhlQLDa/index.html" width="500" height="300"></iframe>
+            </div>
+            <div class="game">
+                <h3>Zebrawl</h3>
+                <iframe src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/xMpnwMbu/index.html" width="500" height="300"></iframe>
+                <div class="game">
+                    <h3>cluster rush</h3>
+                    <iframe src="https://scripttt.global.ssl.fastly.net/files/cluster-rush/index.html
+                        
+                        <div class="game">
+                            <h3>cluster rush</h3>
+                            <iframe src="<div class="game">
+                                    <h3>cluster rush</h3>
+                                    <iframe src="window96.net"
+                                        width="500" height="300"
+                                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Browser Section -->
+    <section id="browser">
+        <h2>Private Browser</h2>
+        <p>Search the web quickly and easily</p>
+        <div class="browser-search">
+            <input type="text" id="search-query" placeholder="Enter URL or search term...">
+            <button onclick="searchGoogle()">Search</button>
+        </div>
+        <div id="browser-message">Search results will open in a new tab</div>
+        <div id="search-preview" style="width: 100%; height: 600px; border: 1px solid #ddd; padding: 20px; overflow: auto; display: none;">
+            <h3>Preview not available</h3>
+            <p>Due to security restrictions, websites cannot be displayed directly in an iframe.</p>
+            <p>Your search has been opened in a new tab.</p>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies">
+        <h2>Movies</h2>
+        <div class="movie-list">
+            <div class="movie">
+                <h3>Movie 1</h3>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="movie">
+                <h3>Movie 2</h3>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/OsIohljR4WY" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools">
+        <h2>Tools</h2>
+        <div class="tools-list">
+            <div class="tool">
+                <h3>Calculator</h3>
+                <iframe src="https://www.desmos.com/scientific" width="500" height="300"></iframe>
+            </div>
+            <div class="tool">
+                <h3>Code Playground</h3>
+                <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+                <button onclick="runCode()">Run Code</button>
+                <iframe id="output" style="width: 100%; height: 300px;"></iframe>
+            </div>
+        </div>
+    </section>
+    
+                                        <!-- Chatbox Section -->
+                                        <section id="chat">
+                                            <h2>Chat Room</h2>
+                                            <p>Talk with other users in real-time</p>
+                                            <div class="chat-container">
+                                                <iframe src="https://deadsimplechat.com/T-jZnhpZE" width="100%" height="600px" frameborder="0"></iframe>
+                                                <!-- Proxies Section -->
+                                                <section id="chat">
+                                                    <h2>Proxies Room</h2>
+                                                    <p>Use Proxies</p>
+                                                    <div class="chat-container">
+                                                        <iframe src="https://nox.hervy.se/" width="100%" height="600px" frameborder="0"></iframe>
+                                        
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Logo" class="logo-small">
+                <span>Student Hub</span>
+            </div>
+            <div class="footer-links">
+                <a href="#games">Games</a>
+                <a href="#browser">Browser</a>
+                <a href="#movies">Movies</a>
+                <a href="#tools">Tools</a>
+            </div>
+            <p>&copy; 2025 Student Hub. For educational purposes only.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
