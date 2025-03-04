@@ -68,34 +68,36 @@
         </div>
         <div class="game-list">
             <div class="game">
-                <h3>Slope</h3>
+                <h3>Geomerty rash</h3>
                 <iframe src="https://previews.envatousercontent.com/files/223637350/index.html" width="500" height="300"></iframe>
+                <button onclick="openFullscreen('https://previews.envatousercontent.com/files/223637350/index.html')">Fullscreen</button>
             </div>
             <div class="game">
                 <h3>flappy bird</h3>
                 <iframe src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/TAhlQLDa/index.html" width="500" height="300"></iframe>
+                <button onclick="openFullscreen('https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/TAhlQLDa/index.html')">Fullscreen</button>
             </div>
             <div class="game">
                 <h3>Zebrawl</h3>
                 <iframe src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/xMpnwMbu/index.html" width="500" height="300"></iframe>
-                <div class="game">
-                    <h3>cluster rush</h3>
-                    <iframe src="https://scripttt.global.ssl.fastly.net/files/cluster-rush/index.html
-                        
-                        <div class="game">
-                            <h3>cluster rush</h3>
-                            <iframe src="<div class="game">
-                                    <h3>cluster rush</h3>
-                                    <iframe src="window96.net"
-                                        width="500" height="300"
-                                        </div>
+                <button onclick="openFullscreen('https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/xMpnwMbu/index.html')">Fullscreen</button>
+            </div>
+            <div class="game">
+                <h3>cluster rush</h3>
+                <iframe src="https://scripttt.global.ssl.fastly.net/files/cluster-rush/index.html" width="500" height="300"></iframe> 
+                <button onclick="openFullscreen('https://scripttt.global.ssl.fastly.net/files/cluster-rush/index.html')">Fullscreen</button>
+            </div>
+            <div class="game">
+                <h3>Cookie CLicker</h3>
+                <iframe src="https://scherb96.github.io/index.html" width="500" height="300"></iframe>
+                <button onclick="openFullscreen('https://scherb96.github.io/index.html')">Fullscreen</button>
             </div>
         </div>
     </section>
 
     <!-- Private Browser Section -->
     <section id="browser">
-        <h2>Private Browser</h2>
+        <h2>Proxy</h2>
         <p>Search the web quickly and easily</p>
         <div class="browser-search">
             <input type="text" id="search-query" placeholder="Enter URL or search term...">
@@ -115,7 +117,7 @@
         <div class="movie-list">
             <div class="movie">
                 <h3>Movie 1</h3>
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="movie">
                 <h3>Movie 2</h3>
@@ -123,8 +125,12 @@
             </div>
         </div>
     </section>
-
-    <!-- Tools Section -->
+    <div>
+    <div class="movie">
+        <h3>Movie 3</h3>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/vtWK1i1-sM" frameborder="0" allowfullscreen></iframe>
+    
+   <!-- Tools Section -->
     <section id="tools">
         <h2>Tools</h2>
         <div class="tools-list">
@@ -140,7 +146,7 @@
             </div>
         </div>
     </section>
-    
+
                                         <!-- Chatbox Section -->
                                         <section id="chat">
                                             <h2>Chat Room</h2>
@@ -153,7 +159,7 @@
                                                     <p>Use Proxies</p>
                                                     <div class="chat-container">
                                                         <iframe src="https://nox.hervy.se/" width="100%" height="600px" frameborder="0"></iframe>
-                                        
+
         </div>
     </section>
 
@@ -174,6 +180,18 @@
         </div>
     </footer>
 
+    <script>
+        function openFullscreen(url) {
+            var newWindow = window.open('', '_blank');
+            if (!newWindow) {
+                alert('Popup blocked. Please allow popups for this site.');
+                return;
+            }
+            newWindow.document.write('<iframe src="' + url + '" style="width: 100%; height: 100%; border: none;"></iframe>');
+            newWindow.document.title = 'Fullscreen';
+            newWindow.focus(); // Focus on the new window
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
